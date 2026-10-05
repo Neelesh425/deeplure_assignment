@@ -1,0 +1,25 @@
+# Core ML
+torch
+torchvision
+timm
+
+# Data / image processing
+Pillow
+numpy
+pandas
+scipy
+scikit-learn
+imagehash
+
+# Config
+PyYAML
+
+# Evaluation
+matplotlib
+
+# Code quality
+ruff
+pytest
+
+# Efficiency profiling
+fvcore

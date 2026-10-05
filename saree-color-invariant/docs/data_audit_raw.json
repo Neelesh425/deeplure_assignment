@@ -1,0 +1,336 @@
+{
+  "deeplure": {
+    "root": "c:\\Users\\neels\\OneDrive\\Desktop\\deep_lure\\data_raw\\deeplure\\handloom_sarees",
+    "total_images": 165,
+    "subdirectories": 0,
+    "subdir_names": [],
+    "non_image_files": [],
+    "filename_prefixes": {
+      "h_img": 9,
+      "img": 156
+    },
+    "corrupt_files": [],
+    "resolution_stats": {
+      "width": {
+        "min": 226,
+        "max": 1512,
+        "mean": 814.8,
+        "median": 662
+      },
+      "height": {
+        "min": 226,
+        "max": 1512,
+        "mean": 821.5,
+        "median": 662
+      },
+      "file_size_kb": {
+        "min": 4.0,
+        "max": 559.2,
+        "mean": 112.1
+      },
+      "aspect_ratio": {
+        "min": 0.75,
+        "max": 1.0,
+        "mean": 0.99
+      },
+      "modes": {
+        "RGB": 165
+      },
+      "formats": {
+        "JPEG": 165
+      }
+    },
+    "orientation": {
+      "portrait": 5,
+      "landscape": 0,
+      "square": 160
+    },
+    "near_duplicates_within": [],
+    "exact_duplicates": {},
+    "tiny_images": [],
+    "huge_images": []
+  },
+  "kaggle": {
+    "root": "c:\\Users\\neels\\OneDrive\\Desktop\\deep_lure\\data_raw\\kaggle",
+    "split_stats": {
+      "train": {
+        "categories": {
+          "Banarasi": 432,
+          "Bandhani": 279,
+          "Ikat": 303,
+          "Pichwai": 279
+        },
+        "total": 1293
+      },
+      "valid": {
+        "categories": {
+          "Banarasi": 43,
+          "Bandhani": 22,
+          "Ikat": 26,
+          "Pichwai": 24
+        },
+        "total": 115
+      },
+      "test": {
+        "categories": {
+          "Banarasi": 14,
+          "Bandhani": 15,
+          "Ikat": 13,
+          "Pichwai": 18
+        },
+        "total": 60
+      }
+    },
+    "total_images": 1468,
+    "unique_source_names": 499,
+    "images_with_rf_hash": 1468,
+    "sources_with_multiple_copies": 366,
+    "total_augmented_images": 1335,
+    "leaky_sources_across_splits": 31,
+    "leaky_source_examples": {
+      "image21_jpeg": [
+        {
+          "split": "train",
+          "category": "Banarasi",
+          "file": "image21_jpeg.rf.4a8d6ac5e7744004fedabd8d63f4e19e.jpg",
+          "has_rf_hash": true
+        },
+        {
+          "split": "train",
+          "category": "Banarasi",
+          "file": "image21_jpeg.rf.5fa6e5bebf8ec83ecdd569878c0c1467.jpg",
+          "has_rf_hash": true
+        },
+        {
+          "split": "train",
+          "category": "Banarasi",
+          "file": "image21_jpeg.rf.a32f1abf958689bd4a009ef6c85c5671.jpg",
+          "has_rf_hash": true
+        },
+        {
+          "split": "train",
+          "category": "Ikat",
+          "file": "image21_jpeg.rf.130f16dec39fe4660aec19a5098acdbc.jpg",
+          "has_rf_hash": true
+        },
+        {
+          "split": "train",
+          "category": "Ikat",
+          "file": "image21_jpeg.rf.4adf57976f4b5712641dcb050910f500.jpg",
+          "has_rf_hash": true
+        },
+        {
+          "split": "train",
+          "category": "Ikat",
+          "file": "image21_jpeg.rf.787768ef8b962fa3606858085b51bbdb.jpg",
+          "has_rf_hash": true
+        },
+        {
+          "split": "valid",
+          "category": "Bandhani",
+          "file": "image21_jpeg.rf.603a0a8b191b9df7105e4cb01083f32b.jpg",
+          "has_rf_hash": true
+        },
+        {
+          "split": "valid",
+          "category": "Pichwai",
+          "file": "image21_jpeg.rf.18a19e0529f7a2ed165958a1dc5fafa1.jpg",
+          "has_rf_hash": true
+        }
+      ],
+      "image6_jpeg": [
+        {
+          "split": "train",
+          "category": "Banarasi",
+          "file": "image6_jpeg.rf.47aa2cd17d2e307b911ef9f8c39efc7f.jpg",
+          "has_rf_hash": true
+        },
+        {
+          "split": "train",
+          "category": "Banarasi",
+          "file": "image6_jpeg.rf.7c1f859c15b92cc75e62a0629c37009a.jpg",
+          "has_rf_hash": true
+        },
+        {
+          "split": "train",
+          "category": "Banarasi",
+          "file": "image6_jpeg.rf.a2ff8249c6f035799ded086ff436033a.jpg",
+          "has_rf_hash": true
+        },
+        {
+          "split": "test",
+          "category": "Pichwai",
+          "file": "image6_jpeg.rf.120c25820894391f2e995a69ff8630ac.jpg",
+          "has_rf_hash": true
+        }
+      ],
+      "images13_jpg": [
+        {
+          "split": "train",
+          "category": "Banarasi",
+          "file": "images13_jpg.rf.7e6d8f6fba496b4664735798a46be021.jpg",
+          "has_rf_hash": true
+        },
+        {
+          "split": "train",
+          "category": "Banarasi",
+          "file": "images13_jpg.rf.b17650035a5212f1feacdeaea83854c2.jpg",
+          "has_rf_hash": true
+        },
+        {
+          "split": "train",
+          "category": "Banarasi",
+          "file": "images13_jpg.rf.dbbd247da670831cf3506abf20f45562.jpg",
+          "has_rf_hash": true
+        },
+        {
+          "split": "train",
+          "category": "Bandhani",
+          "file": "images13_jpg.rf.4c82b06ee86df7a6302e352293fe8679.jpg",
+          "has_rf_hash": true
+        },
+        {
+          "split": "train",
+          "category": "Bandhani",
+          "file": "images13_jpg.rf.7bd15719a8bff563667de2fdbeeffaba.jpg",
+          "has_rf_hash": true
+        },
+        {
+          "split": "train",
+          "category": "Bandhani",
+          "file": "images13_jpg.rf.ae8ed1dbadefb0708c41c738b78c502c.jpg",
+          "has_rf_hash": true
+        },
+        {
+          "split": "train",
+          "category": "Ikat",
+          "file": "images13_jpg.rf.088d47e718f23aca85b4e59170be7eed.jpg",
+          "has_rf_hash": true
+        },
+        {
+          "split": "train",
+          "category": "Ikat",
+          "file": "images13_jpg.rf.723fcd6ebffb0a3b9967bf28ba694063.jpg",
+          "has_rf_hash": true
+        },
+        {
+          "split": "train",
+          "category": "Ikat",
+          "file": "images13_jpg.rf.b7548d89e1719e9fa7a0c4128277e2f3.jpg",
+          "has_rf_hash": true
+        },
+        {
+          "split": "valid",
+          "category": "Pichwai",
+          "file": "images13_jpg.rf.b1b9fd7cc1bfc8df2ae4285a5b9f41fb.jpg",
+          "has_rf_hash": true
+        }
+      ],
+      "images16_jpg": [
+        {
+          "split": "train",
+          "category": "Banarasi",
+          "file": "images16_jpg.rf.8af227dd4050d55f5c8d120339315b65.jpg",
+          "has_rf_hash": true
+        },
+        {
+          "split": "train",
+          "category": "Banarasi",
+          "file": "images16_jpg.rf.aefe5299efcff5f76cee5b6661e09ab5.jpg",
+          "has_rf_hash": true
+        },
+        {
+          "split": "train",
+          "category": "Banarasi",
+          "file": "images16_jpg.rf.db40ea3d983ece3669f8ac9f32d0e6b7.jpg",
+          "has_rf_hash": true
+        },
+        {
+          "split": "train",
+          "category": "Bandhani",
+          "file": "images16_jpg.rf.1a9fc90c45846e88e301498a1fdad836.jpg",
+          "has_rf_hash": true
+        },
+        {
+          "split": "train",
+          "category": "Bandhani",
+          "file": "images16_jpg.rf.22c52dd1855a8a36661c9f39431641b9.jpg",
+          "has_rf_hash": true
+        },
+        {
+          "split": "train",
+          "category": "Bandhani",
+          "file": "images16_jpg.rf.362759b8e1e37f12bcdec2114e78c063.jpg",
+          "has_rf_hash": true
+        },
+        {
+          "split": "train",
+          "category": "Pichwai",
+          "file": "images16_jpg.rf.062b61c2a885cc8690ad5ba542f3c2a3.jpg",
+          "has_rf_hash": true
+        },
+        {
+          "split": "train",
+          "category": "Pichwai",
+          "file": "images16_jpg.rf.e30d932a44c6c5794722f6d583af57e3.jpg",
+          "has_rf_hash": true
+        },
+        {
+          "split": "train",
+          "category": "Pichwai",
+          "file": "images16_jpg.rf.fbd1e55dd11fefae3bc34ab76a5fa745.jpg",
+          "has_rf_hash": true
+        },
+        {
+          "split": "valid",
+          "category": "Ikat",
+          "file": "images16_jpg.rf.b1559f6bd09134db8387e05bcf7194fc.jpg",
+          "has_rf_hash": true
+        }
+      ],
+      "images27_jpg": [
+        {
+          "split": "train",
+          "category": "Banarasi",
+          "file": "images27_jpg.rf.03d463e5808a105fa31dfa05b0dc81f9.jpg",
+          "has_rf_hash": true
+        },
+        {
+          "split": "train",
+          "category": "Banarasi",
+          "file": "images27_jpg.rf.2cbee37d4edf75e7b55035de52d0a51a.jpg",
+          "has_rf_hash": true
+        },
+        {
+          "split": "train",
+          "category": "Banarasi",
+          "file": "images27_jpg.rf.41aec72497f33643b31a0f4af4543f36.jpg",
+          "has_rf_hash": true
+        },
+        {
+          "split": "valid",
+          "category": "Ikat",
+          "file": "images27_jpg.rf.494e8841fc06959d66550d0f81ec1d29.jpg",
+          "has_rf_hash": true
+        }
+      ]
+    },
+    "corrupt_files": [],
+    "resolution_stats": {
+      "width": {
+        "min": 640,
+        "max": 640,
+        "unique": 1
+      },
+      "height": {
+        "min": 640,
+        "max": 640,
+        "unique": 1
+      },
+      "modes": {
+        "RGB": 1468
+      }
+    }
+  },
+  "cross_duplicates": []
+}

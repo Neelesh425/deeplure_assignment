@@ -1,0 +1,40 @@
+# Data (proprietary + large)
+data/
+data_raw/
+cache/
+checkpoints/
+outputs/
+results/*.json
+
+# Brief (personal reference, not for submission repo)
+BRIEF.md
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Venv
+venv/
+.venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+wandb/

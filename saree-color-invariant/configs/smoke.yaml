@@ -1,0 +1,64 @@
+# === Smoke-test configuration (CPU, <=200 images, 1 epoch) ===
+
+data:
+  data_root: ${DATA_ROOT:./data_raw}
+  deeplure_subdir: deeplure/handloom_sarees
+  kaggle_subdir: kaggle
+  manifest_path: data/manifest.csv
+  pairs_val_path: data/pairs_val.csv
+  pairs_test_path: data/pairs_test.csv
+
+model:
+  backbone: mobilenetv3_small_100
+  pretrained: true
+  embedding_dim: 128
+  gem_p: 3.0
+  dropout: 0.1
+
+training:
+  epochs: 1
+  batch_size: 8
+  lr: 1.0e-3
+  weight_decay: 1.0e-4
+  optimizer: adamw
+  scheduler: cosine
+  warmup_epochs: 0
+  amp: false
+  num_workers: 0
+  seed: 42
+  input_size: 224
+  loss: arcface
+  arcface_s: 30.0
+  arcface_m: 0.3
+  pk_p: 4
+  pk_k: 2
+  max_images: 200  # smoke-test cap
+
+augmentation:
+  hue_rotation: true
+  hue_rotation_range: 1.0
+  channel_permutation: true
+  channel_perm_prob: 0.3
+  random_grayscale_prob: 0.3
+  colour_jitter: true
+  colour_jitter_brightness: 0.3
+  colour_jitter_contrast: 0.3
+  colour_jitter_saturation: 0.5
+  colour_jitter_hue: 0.5
+  random_invert_prob: 0.1
+  random_crop: true
+  random_horizontal_flip: true
+  random_rotation: 10
+  random_erasing_prob: 0.2
+
+eval:
+  gallery_batch_size: 16
+  k_vals: [1, 5, 10]
+  verification_threshold: null
+  num_bootstrap: 10
+  bootstrap_seed: 42
+
+output:
+  checkpoint_dir: checkpoints
+  results_dir: results
+  cache_dir: cache

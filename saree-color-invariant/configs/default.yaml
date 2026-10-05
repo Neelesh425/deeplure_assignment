@@ -1,0 +1,68 @@
+# === Default configuration ===
+# Override DATA_ROOT via environment variable
+
+data:
+  data_root: ${DATA_ROOT:./data_raw}  # override with env var
+  deeplure_subdir: deeplure/handloom_sarees
+  kaggle_subdir: kaggle
+  manifest_path: data/manifest.csv
+  pairs_val_path: data/pairs_val.csv
+  pairs_test_path: data/pairs_test.csv
+
+model:
+  backbone: mobilenetv3_small_100  # timm model name
+  pretrained: true
+  embedding_dim: 128
+  gem_p: 3.0  # GeM pooling power
+  dropout: 0.1
+
+training:
+  epochs: 30
+  batch_size: 32
+  lr: 1.0e-3
+  weight_decay: 1.0e-4
+  optimizer: adamw
+  scheduler: cosine
+  warmup_epochs: 2
+  amp: true
+  num_workers: 4
+  seed: 42
+  input_size: 224
+  # Metric learning
+  loss: arcface
+  arcface_s: 30.0
+  arcface_m: 0.3
+  # PK sampling
+  pk_p: 8   # designs per batch
+  pk_k: 4   # images per design
+
+augmentation:
+  # Colour invariance augmentations
+  hue_rotation: true
+  hue_rotation_range: 1.0  # full range [0, 1]
+  channel_permutation: true
+  channel_perm_prob: 0.3
+  random_grayscale_prob: 0.3
+  colour_jitter: true
+  colour_jitter_brightness: 0.3
+  colour_jitter_contrast: 0.3
+  colour_jitter_saturation: 0.5
+  colour_jitter_hue: 0.5
+  random_invert_prob: 0.1
+  # Geometric augmentations
+  random_crop: true
+  random_horizontal_flip: true
+  random_rotation: 10
+  random_erasing_prob: 0.2
+
+eval:
+  gallery_batch_size: 64
+  k_vals: [1, 5, 10]
+  verification_threshold: null  # set from val
+  num_bootstrap: 100
+  bootstrap_seed: 42
+
+output:
+  checkpoint_dir: checkpoints
+  results_dir: results
+  cache_dir: cache
